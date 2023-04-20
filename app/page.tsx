@@ -11,13 +11,6 @@ function Home() {
 
       <div className='align-center'>
         <Bit />
-        <Bit />
-        <Bit />
-        <Bit />
-        <Bit />
-        <Bit />
-        <Bit />
-        <Bit />
       </div>
     </>
   )
