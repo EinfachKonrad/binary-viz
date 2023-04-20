@@ -2,6 +2,7 @@
 
 
 import React, { useState } from 'react';
+import props from 'prop-types';
 
 function Bit(props) {
   const [isOn, setIsOn] = useState(false);
