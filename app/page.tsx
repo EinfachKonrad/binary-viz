@@ -1,4 +1,4 @@
-import Bit from '../components/bit'
+import Bit from '@/components/bit'
 import React from 'react'
 
 function Home() {
