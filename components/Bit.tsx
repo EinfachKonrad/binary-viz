@@ -1,6 +1,6 @@
 import React from 'react'
 
-function bit() {
+function Bit() {
   return (
     <div className='inline'>
         bit
@@ -8,4 +8,4 @@ function bit() {
   )
 }
 
-export default bit
+export default Bit
