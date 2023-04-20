@@ -10,7 +10,9 @@ export default function RootLayout({
     <html lang="de">
       <Head />
       <body>
-        {children}
+        <main className='pt-[5%]'>
+          {children}
+        </main>
       </body>
     </html>
   )
