@@ -5,6 +5,7 @@ export default function Head() {
       <>
         <title>Binary Visualizer by EinfachKonrad</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <link rel="icon" href="/favicon.ico" />
   
             
