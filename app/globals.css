@@ -27,6 +27,6 @@ body {
 }
 
 @font-face {
-  font-family: ;
-  src: url();
+  font-family: 'led';
+  src: url(fonts/TheLedDisplay-Standart.ttf);
 }
