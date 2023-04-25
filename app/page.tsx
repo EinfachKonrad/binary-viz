@@ -24,10 +24,8 @@ function Home() {
         <Bit id="2" />
         <Bit id="1" />
       </div>
-
-      {/* Rende ein Element, das den Binärcode anzeigt */}
       <div className="text-center text-4xl font-bold">
-        <h2 id='decimal'>0</h2>
+        <h2 id='decimal'>Decimal: 0</h2>
       </div>
     </>
   );

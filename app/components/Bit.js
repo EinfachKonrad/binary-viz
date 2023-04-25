@@ -1,23 +1,27 @@
 'use client';
 
-
-
 import React, { useState } from 'react';
 import props from 'prop-types';
 
 function Bit (props) {
-  const [isOn, setIsOn] = useState(true);
-  const [number, setNumber] = useState(1);
+  const [isOn, setIsOn] = useState(false);
+  const [number, setNumber] = useState(0);
 
   function handleClick() {
     setIsOn(!isOn);
     setNumber(isOn ? 0 : 1);
 
-    calculate();
+    setTimeout(function(){
+      calculate();
+    }, 50);
+
   }
 
   return (
     <div className="text-center">
+      <p className=" font-bold text-3xl text-white pt-2" id={"pot-" + props.id}>
+        {Math.pow(2, props.id - 1).toString()}
+      </p>
       <button
         className={isOn ? 'bg-green-400 p-4' : 'bg-red-600 p-4'}
         onClick={handleClick}
@@ -44,8 +48,8 @@ export function calculate() {
   var result7 = document.getElementById("result-7").innerHTML;
   var result8 = document.getElementById("result-8").innerHTML;
 
-  const bin = result1 + result2 + result3 + result4 + result5 + result6 + result7 + result8;
+  const bin = result8 + result7 + result6 + result5 + result4 + result3 + result2 + result1;
   const decimalResult = parseInt(bin, 2).toString(10);
 
-  document.getElementById("decimal").innerHTML = result1 + result2 + result3 + result4 + result5 + result6 + result7 + result8;
+  document.getElementById("decimal").innerHTML = "Decimal: " + decimalResult;
 }
