@@ -2,6 +2,9 @@
 
 import React, { useState } from 'react';
 import props from 'prop-types';
+import { alpha, styled } from '@mui/material/styles';
+import { pink } from '@mui/material/colors';
+import Switch from '@mui/material/Switch';
 
 function Bit (props) {
   const [isOn, setIsOn] = useState(false);
@@ -17,17 +20,37 @@ function Bit (props) {
 
   }
 
+  const PinkSwitch = styled(Switch)(({ theme }) => ({
+    '& .MuiSwitch-switchBase.Mui-checked': {
+      color: pink[600],
+      '&:hover': {
+        backgroundColor: alpha(pink[600], theme.palette.action.hoverOpacity),
+      },
+    },
+    '& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track': {
+      backgroundColor: pink[600],
+    },
+  }));
+  
+
+  const label = { inputProps: { 'aria-label': 'Click the switch' } };
+
   return (
     <div className="text-center">
       <p className=" font-bold text-3xl text-white pt-2" id={"pot-" + props.id}>
         {Math.pow(2, props.id - 1).toString()}
       </p>
-      <button
+      {/* <button
         className={isOn ? 'bg-green-400 p-4' : 'bg-red-600 p-4'}
         onClick={handleClick}
       >
         {isOn ? 'Ein' : 'Aus'}
-      </button>
+      </button> */}
+
+      <div>
+        <Switch {...label} onChange={handleClick} color='error' />
+      </div>
+
       <p className="font-[led] font-bold text-3xl text-green-400 pt-2" id={"result-" + props.id}>
         {number}
       </p>
