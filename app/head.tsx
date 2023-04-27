@@ -9,7 +9,7 @@ export default function Head() {
         <link rel="icon" href="/favicon.ico" />
   
             
-        <meta property="og:locale" content="de" />
+        <meta property="og:locale" content="en" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Binary Visualizer by EinfachKonrad" />
   
@@ -24,7 +24,7 @@ export default function Head() {
   
         <meta content="#ffffff" data-react-helmet="true" name="theme-color" />
   
-        <meta name="copyright" content="EinfachMedia Webmedienproduktion und Eventtechnik Leipzig" />	
+        <meta name="copyright" content="EinfachMedia Webmedienproduktion und Eventtechnik" />	
   
       </>
     );
