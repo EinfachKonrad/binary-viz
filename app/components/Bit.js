@@ -2,8 +2,8 @@
 
 import React, { useState } from 'react';
 import props from 'prop-types';
-import { alpha, styled } from '@mui/material/styles';
-import { pink } from '@mui/material/colors';
+{/* import { alpha, styled } from '@mui/material/styles';
+import { pink } from '@mui/material/colors'; */}
 import Switch from '@mui/material/Switch';
 
 function Bit (props) {
@@ -19,18 +19,6 @@ function Bit (props) {
     }, 10);
 
   }
-
-  const PinkSwitch = styled(Switch)(({ theme }) => ({
-    '& .MuiSwitch-switchBase.Mui-checked': {
-      color: pink[600],
-      '&:hover': {
-        backgroundColor: alpha(pink[600], theme.palette.action.hoverOpacity),
-      },
-    },
-    '& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track': {
-      backgroundColor: pink[600],
-    },
-  }));
   
 
   const label = { inputProps: { 'aria-label': 'Click the switch' } };
@@ -60,6 +48,9 @@ function Bit (props) {
 }
 
 export default Bit; 
+
+
+// Other functions
 
 export function calculate() {
 
