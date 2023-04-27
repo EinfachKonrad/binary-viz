@@ -16,7 +16,7 @@ function Bit (props) {
 
     setTimeout(function(){
       calculate();
-    }, 50);
+    }, 10);
 
   }
 
@@ -40,6 +40,7 @@ function Bit (props) {
       <p className=" font-bold text-3xl text-white pt-2" id={"pot-" + props.id}>
         {Math.pow(2, props.id - 1).toString()}
       </p>
+
       {/* <button
         className={isOn ? 'bg-green-400 p-4' : 'bg-red-600 p-4'}
         onClick={handleClick}
